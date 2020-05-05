@@ -1,1 +1,8 @@
 
+/* Jumbotron */
+
+.jumbotron {
+    padding: 150px 0px;
+    background-image: url(../img/image1.jpg);
+    background-size: cover;
+}

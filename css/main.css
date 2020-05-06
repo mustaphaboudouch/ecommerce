@@ -6,3 +6,36 @@
     background-image: url(../img/image1.jpg);
     background-size: cover;
 }
+
+/* Footer Top */
+
+.footer-top {
+    background-color: #222;
+}
+
+.footer-top .social-list li a {
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 36px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+/* Footer Bottom */
+
+.footer-bottom {
+    background-color: #151515;
+}
+
+/* TEMP */
+
+footer h5 {
+    color: #fff;
+}
+
+footer ul li a,
+footer p {
+    color: #ccc;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
 
     <!-- Start Navbar -->
@@ -59,39 +61,111 @@
     </nav>
     <!-- End Navbar -->
 
-    <!-- Start Jumbotron -->
-    <div class="jumbotron mb-0 rounded-0">
+    <!-- Start Breadcrumb -->
+    <div class="py-4">
         <div class="container">
-            <h1 class="display-4 text-white">It's all in the Details</h1>
-            <p class="lead text-white">Explore our new collection</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Explore</a>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb p-0 mb-0 bg-transparent">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Category</li>
+                </ol>
+            </nav>
         </div>
     </div>
-    <!-- End Jumbotron -->
+    <!-- End Breadcrumb -->
 
-    <!-- Start Best Selling -->
-    <div class="py-5">
+    <!-- Start Title -->
+    <div class="pb-2">
         <div class="container">
-            <h2 class="text-center">Best Selling</h2>
-            <ul class="nav nav-pills justify-content-center my-4" id="pills-tab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" id="pills-category1" data-toggle="pill" href="#category1"
-                        role="tab">Category 1</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="pills-category2" data-toggle="pill" href="#category2" role="tab">Category
-                        2</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="pills-category3" data-toggle="pill" href="#category3" role="tab">Category
-                        3</a>
-                </li>
-            </ul>
-            <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="category1" role="tabpanel">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>Headphones</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Title -->
+
+    <!-- Start Content -->
+    <div class="pb-5">
+        <div class="container">
+            <div class="row">
+                <!-- Filters -->
+                <div class="col-12 col-md-4">
+                    <div class="accordion mt-3" id="accordion">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne">
+                                        Sorting
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                <div class="card-body">
+                                    <form>
+                                        <ul class="list-unstyled mb-0">
+                                            <li>
+                                                <input type="radio" name="price" id="sort1">
+                                                <label for="sort1">Featured</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="price" id="sort2">
+                                                <label for="sort2">Best Selling</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="price" id="sort3">
+                                                <label for="sort3">Alphabetically A-Z</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="price" id="sort4">
+                                                <label for="sort4">Price</label>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo">
+                                        Price
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <form>
+                                        <ul class="list-unstyled mb-0">
+                                            <li>
+                                                <input type="radio" name="price" id="price1">
+                                                <label for="price1">$0 to $100</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="price" id="price2">
+                                                <label for="price2">$100 to $200</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="price" id="price3">
+                                                <label for="price3">$200 to $300</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="price" id="price4">
+                                                <label for="price4">$300 to $400</label>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Products -->
+                <div class="col-12 col-md-8">
                     <div class="row">
-                        <div class="col-12 col-sm-6 col-lg-3">
-                            <div class="card text-center border-0">
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="card text-center mt-3">
                                 <img src="img/product.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Smash Pack</h5>
@@ -100,8 +174,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-3">
-                            <div class="card text-center border-0">
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="card text-center mt-3">
                                 <img src="img/product.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Smash Pack</h5>
@@ -110,8 +184,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-3">
-                            <div class="card text-center border-0">
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="card text-center mt-3">
                                 <img src="img/product.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Smash Pack</h5>
@@ -120,8 +194,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-3">
-                            <div class="card text-center border-0">
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="card text-center mt-3">
+                                <img src="img/product.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Smash Pack</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">$145</h6>
+                                    <a href="#" class="card-link">Learn more →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="card text-center mt-3">
                                 <img src="img/product.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Smash Pack</h5>
@@ -132,38 +216,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="category2" role="tabpanel">
-                </div>
-                <div class="tab-pane fade" id="category3" role="tabpanel">
-                </div>
             </div>
         </div>
     </div>
-    <!-- End Best Selling -->
-
-    <!-- Start Features -->
-    <div class="py-5 border-top border-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <i class="fa fa-eye fa-4x"></i>
-                    <h2>Simple Design</h2>
-                    <p>Design, not for design sake but to make the utilitarian use as good as we can.</p>
-                </div>
-                <div class="col-4">
-                    <i class="fa fa-bullseye fa-4x"></i>
-                    <h2>Quality Materials</h2>
-                    <p>Because you don't have time for broken zippers, you have a life of travel.</p>
-                </div>
-                <div class="col-4">
-                    <i class="fa fa-life-ring fa-4x"></i>
-                    <h2>Lifelong Friend</h2>
-                    <p>Don't ever lose your new best friend. Send it in for repairs, not replacements.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Features -->
+    <!-- End Content -->
 
     <!-- Start Footer Top -->
     <footer class="footer-top">
@@ -171,7 +227,8 @@
             <div class="row py-5">
                 <div class="col-12 col-sm-8 col-md-6 col-lg-4">
                     <img src="img/logo.png" alt="..." width="100px">
-                    <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iusto, officia eligendi in quaerat beatae.</p>
+                    <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iusto, officia
+                        eligendi in quaerat beatae.</p>
                     <ul class="list-unstyled social-list">
                         <li class="d-inline-block"><a class="btn" href="#"><i class="fa fa-facebook"></i></a></li>
                         <li class="d-inline-block"><a class="btn" href="#"><i class="fa fa-twitter"></i></a></li>
@@ -231,4 +288,5 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
